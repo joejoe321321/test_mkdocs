@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>About - Test page</title>
+        <title>API - Test page</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -48,11 +48,11 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="active">
-                        <a href="./">About</a>
-                    </li>
                     <li >
-                        <a href="../Cobrand/">API</a>
+                        <a href="../about/">About</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">API</a>
                     </li>
                 </ul>
 
@@ -63,12 +63,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../about/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../Cobrand/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -80,45 +80,165 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#colla-potentia-mutavit-habet-cum-atria">Colla potentia mutavit habet cum atria</a></li>
-            <li><a href="#habet-opem-atque">Habet opem atque</a></li>
-            <li><a href="#vitio-ubi-senectam-diverso-procul">Vitio ubi senectam diverso procul</a></li>
+        <li class="main active"><a href="#the-cobrand-api">The Cobrand API</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#types">Types</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="colla-potentia-mutavit-habet-cum-atria">Colla potentia mutavit habet cum atria</h1>
-<h2 id="habet-opem-atque">Habet opem atque</h2>
-<p>Lorem markdownum, usurus quod tamen domesticus Olympi faciles dignus puerum
-increvisse, saxa, quidem annum medicamine natus, genetrix. Ipso insuperabile
-nati, per volentem amplexus facientibus draconem, ius saxo, cum quam ipse.</p>
-<pre><code>cloud_illegal_sink.internal_root_open.excel_pebibyte(vci_storage_mamp,
-        289544);
-rateFddiGoogle.inkjetBarebones -= 1 - capacity;
-cmsSoaPost.oasisInterlaced(windows_iphone + minimize_site, saas_tween,
-        motion_compile_vertical);
-file_tebibyte_system = pop_gnu(ugcSystem, rtfPlug, dimmVaporware) +
-        user.page.engine(ram_ad) + logicWhitelist(ipadDigitize, utility,
-        soPathSystem);
-</code></pre>
-<p>Nec vidit curvi milite gestu cum. Ille tot anus fontes.</p>
-<h2 id="vitio-ubi-senectam-diverso-procul">Vitio ubi senectam diverso procul</h2>
-<p>Fertilitatis <strong>tempora</strong> vocibus: repurgato repagula. Ignavi demum Bacchi colles
-videre, habet tu servatoremque quod sibila necopina numine hominem. Malit torvo
-terreat sceleris corpora adiecisse palmis minus obsuntque non multaque
-Abantiades tunc vocatur leones, arma potest scilicet facit. Retentis non saxis
-tales gladiis error pingebat congressus et posse maius sed cum miserande inter,
-equidem in deum.</p>
-<p>Quotiens fuit humum neque, eat vidit; haec erat vulnere paventque! <strong>Callem
-aut</strong> Dolona.</p>
-<ol>
-<li>Et tertia partu</li>
-<li>Mox quae Ganymedes circumspexit nulla</li>
-<li>Rege membra penates in illa cum tantique</li>
-</ol>
-<p>Sumere opus ventis artes pariter arduus tecum <a href="http://ecce.io/rerum">sibilat</a>
-crimine dives adversos. Quater velamine quoque gaudet incrementa librata, et
-ego; terrena qua fatebor sum: nec et.</p></div>
+<h1 id="the-cobrand-api">The Cobrand API</h1>
+<p>This API has the following attributes:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>namespace</td>
+<td>com.yahoo.cobrandedcard.parsec</td>
+</tr>
+<tr>
+<td>version</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources">Resources</h2>
+<h3 id="cocardcollection"><a href="#CoCardCollection">CoCardCollection</a></h3>
+<h4 id="get-ycacards">GET /yca/cards</h4>
+<h4 id="request-parameters">Request parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Source</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>guid</td>
+<td>String</td>
+<td>query: guid</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="responses">Responses:</h4>
+<p>Expected:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 OK</td>
+<td>CoCardCollection</td>
+</tr>
+</tbody>
+</table>
+<p>Exception:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400 Bad Request</td>
+<td>ResourceError</td>
+<td>The user given wrong format of guid or wrong format nid.</td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>403 Forbidden</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>500 Internal Server Error</td>
+<td>ResourceError</td>
+<td>The system have error.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<h3 id="datetime">DateTime</h3>
+<p>e.g.2013-03-06T11:00:00Z</p>
+<p><code>DateTime</code> is a <code>String</code> type.</p>
+<h3 id="id">ID</h3>
+<p><code>ID</code> is a <code>String</code> type.</p>
+<h3 id="cocardstatus">CoCardStatus</h3>
+<p><code>CoCardStatus</code> is a <code>Struct</code> with no specified fields</p>
+<h3 id="cocard">CoCard</h3>
+<p><code>CoCard</code> is a <code>Struct</code> type with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cardNumber</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>modifiedTime</td>
+<td><a href="#datetime">DateTime</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td><a href="#cocardstatus">CoCardStatus</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>id</td>
+<td><a href="#id">ID</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>guid</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cocardcollection_1">CoCardCollection</h3>
+<p><code>CoCardCollection</code> is a <code>Struct</code> with no specified fields</p></div>
         </div>
 
         <footer class="col-md-12">
